@@ -1,6 +1,6 @@
 <h1> coinpayment </h1>
 
-<p align="left"> CoinPayment is a Laravel module for handling transactions from CoinPayment like a create transaction, history transaction, etc..</p>
+<p align="left"> CoinPayment 币种钱包地址生成</p>
 
 
 ## Installing
