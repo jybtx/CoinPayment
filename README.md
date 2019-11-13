@@ -1,6 +1,6 @@
-<h1 align="center"> coinpayment </h1>
+<h1> coinpayment </h1>
 
-<p align="center"> CoinPayment is a Laravel module for handling transactions from CoinPayment like a create transaction, history transaction, etc..</p>
+<p align="left"> CoinPayment is a Laravel module for handling transactions from CoinPayment like a create transaction, history transaction, etc..</p>
 
 
 ## Installing
@@ -11,7 +11,10 @@ $ composer require jybtx/coinpayment
 
 ## Usage
 
-TODO
+```php
+use CoinPayment;
+CoinPayment::GetDepositAddress('currency');
+```
 
 ## Contributing
 
