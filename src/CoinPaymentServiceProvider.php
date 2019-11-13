@@ -46,7 +46,7 @@ class CoinPaymentServiceProvider extends ServiceProvider
      */
     private function getRegisterSingleton()
     {
-    	$this->app->singleton('HuobiApi', function ($app) {
+    	$this->app->singleton('CoinPayment', function ($app) {
             $config = isset($app['config']['services']['coin-payment'])?$app['config']['services']['coin-payment']:null;
             if ( is_null( $config ) ) {
                 $config = $app['config']['coin-payment'] ?: $app['config']['coin-payment::config'];
