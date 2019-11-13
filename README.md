@@ -5,8 +5,40 @@
 
 ## Installing
 
+### Composer
+Execute the following command to get the latest version of the package:
+
 ```shell
 $ composer require jybtx/coinpayment
+```
+### Laravel
+
+#### >= laravel5.5
+
+ServiceProvider will be attached automatically
+
+#### Other
+
+In your `config/app.php` add `Jybtx\CoinPayment\CoinPaymentServiceProvider::class` to the end of the `providers` array:
+
+```php
+'providers' => [
+    ...
+    Jybtx\CoinPayment\CoinPaymentServiceProvider::class,
+],
+'aliases'  => [
+    ...
+    "CoinPayment": Jybtx\CoinPayment\CoinPaymentFacade::class,
+]
+```
+Publish Configuration
+
+```shell
+php artisan vendor:publish --provider "Jybtx\CoinPayment\CoinPaymentServiceProvider"
+```
+OR
+```shell
+php artisan vendor:publish --tag=coin-payment
 ```
 
 ## Usage
