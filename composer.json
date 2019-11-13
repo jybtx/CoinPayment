@@ -1,0 +1,29 @@
+{
+    "name": "jybtx/coinpayment",
+    "description": "Coinpayment currency wallet address generation.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jybtx",
+            "email": "2574034626@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Jybtx\\CoinPayment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jybtx\\CoinPayment\\CoinPaymentServiceProvider"
+            ],
+            "aliases": {
+                "CoinPayment": "Jybtx\\CoinPayment\\CoinPaymentFacade"
+            }
+        }
+    }
+}
