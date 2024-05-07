@@ -9,7 +9,6 @@
             "email": "2574034626@qq.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
@@ -25,5 +24,7 @@
                 "CoinPayment": "Jybtx\\CoinPayment\\CoinPaymentFacade"
             }
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
