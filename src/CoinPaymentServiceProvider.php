@@ -3,11 +3,11 @@
 namespace Jybtx\CoinPayment;
 
 use Illuminate\Support\ServiceProvider;
-use Jybtx\HuoBiApi\CoinPaymentClientApi;
+use Jybtx\CoinPayment\CoinPaymentClientApi;
 
 class CoinPaymentServiceProvider extends ServiceProvider
 {
-	
+
 	/**
      * Bootstrap any application services.
      *
